@@ -42,6 +42,54 @@
 }
 
 
-.app h1 h2 h3{
-  background-color: rgb(208, 88, 178);
+*{
+  background-color: rgb(117, 221, 205);
+  font-size: 1.5vw;
+}
+
+div .app{
+  border: 0.5vw solid;
+  border-radius: 5vw;
+  background-color: rgb(30, 5, 98);
+  width: 60vw;
+  height: 80vw;
+  padding: 0%;
+}
+
+h1, h2, h3, h4, form, .lab, .card {
+  background-color: rgb(30, 5, 98);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.miBoton{
+  font-weight: 200;
+  width: 10vw;
+  margin-left: 25vw;
+  background-color: rgb(201, 8, 147);
+  margin-top: 5vw;
+}
+
+input.in{
+  width: 20vw;
+  margin-left: 20vw;
+  border-radius: 2vw;
+  color: blue;
+  font-weight: 100;
+  font-style: italic;
+}
+
+h1{
+  font-size: medium;
+  margin-top: 10vw;
+}
+
+.error{
+  background-color: azure;
+  color: red;
 }

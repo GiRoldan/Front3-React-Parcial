@@ -36,13 +36,13 @@ function App() {
       <h2>Bienvenido!</h2>
       <h3>Por favor ingrese sus datos para registrarse en nuestro sistema</h3>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="" >Ingrese su nombre: </label>
-        <input type="text" value={input.nombre} onChange={(e) => setInput({...input, nombre: e.target.value})} />
-        <label htmlFor="">Ingresa tu contraseña: </label>
-        <input type="text" value={input.password} onChange={(e) => setInput({...input, password: e.target.value})} />       
-        <button type='submit'>Enviar</button>
+        <label className='lab' htmlFor="" >Ingrese su nombre: </label>
+        <input className='in' type="text" value={input.nombre} onChange={(e) => setInput({...input, nombre: e.target.value})} />
+        <label className='lab' htmlFor="">Ingresa tu contraseña: </label>
+        <input className='in'type="text" value={input.password} onChange={(e) => setInput({...input, password: e.target.value})} />       
+        <button className='miBoton' type='submit'>Enviar</button>
         <br />
-        <span>{err && 'Por favor chequea que la información sea correcta'}</span>
+        <span className='error'>{err && 'Por favor chequea que la información sea correcta'}</span>
       </form>
       <br />
       {/* <Card/> */}
